@@ -11,7 +11,12 @@ function NewLiElement(className, id, content)
     return element
 
 }
+function AppendListElement(listElement, id) 
+{
+    let element = document.getElementById(id)
+    element.append(listElement)
+}
 
-let element = NewLiElement("boomkin", "1", "hehhehe")
 
-console.log(element)
+
+AppendListElement(NewLiElement("", "haha", "lmao"),"list" )
