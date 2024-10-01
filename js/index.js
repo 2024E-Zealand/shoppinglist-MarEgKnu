@@ -17,6 +17,20 @@ function AppendListElement(listElement, id)
     element.append(listElement)
 }
 
+function ChangeClassAttr(element, classValue) 
+{
+    element.className = classValue
+}
+function DeleteElement(element) 
+{
+    element.remove()
+}
+
+
 
 
 AppendListElement(NewLiElement("", "haha", "lmao"),"list" )
+
+let e = document.getElementById("haha")
+ChangeClassAttr(e, "LOOOOOL")
+DeleteElement(e)
